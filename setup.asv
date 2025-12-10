@@ -1,17 +1,6 @@
 %% OBJ DETECTION SETUP SCRIPT
 % Duncan Likely
 
-%% Model Composer Parameters
-
-fs = 100e6;
-Ts = 1/fs;
-
-len_dat = 8;
-len_dat_frac = 0;
-
-data_word_length = int32(len_dat);
-data_word_bin_p = int32(len_dat_frac);
-
 %% Test Images
 
 filepath = ".\test_imgs\";
@@ -21,10 +10,7 @@ images = filepath + ["IMG_9415.jpg" "IMG_9416.jpg" "IMG_9417.jpg"];
 input_dimensions = [240 320];
 dimensions_with_pad = input_dimensions + [84 82];
 
-n_pixels = prod(input_dimensions);
-n_pixels_w_pad = prod(dimensions_with_pad);
-
-gen_duration = Ts*n_pixels_w_pad;
+n_
 
 img1 = imread(images(1));
 
@@ -39,3 +25,12 @@ input_image = imresize(input_image, input_dimensions);
 
 [frm_height, frm_width, frm_depth] = size(input_image);
 
+%% Model Composer Parameters
+
+fs = 100e6;
+
+len_dat = 8;
+len_dat_frac = 0;
+
+data_word_length = int32(len_dat);
+data_word_bin_p = int32(len_dat_frac);
