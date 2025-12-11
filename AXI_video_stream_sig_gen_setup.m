@@ -1,10 +1,11 @@
-%% OBJ DETECTION SETUP SCRIPT
+%% Setup file for AXI4-Video-Stream signals generation
 % Duncan Likely
 
-
-%% Test Images
-
 filepath = ".\test_imgs\";
+outfile_number = 0;
+
+output_file = "AXI_video_stream_sig.mat";
+%save(output_file, 'outfile_number')
 
 images = filepath + ["IMG_9415.jpg" "IMG_9416.jpg" "IMG_9417.jpg"];
 
@@ -13,8 +14,9 @@ dimensions_with_pad = input_dimensions + [84 82];
 
 n_pixels = prod(input_dimensions);
 n_pixels_w_pad = prod(dimensions_with_pad);
+pixel_per_transfer = 8;
 
-gen_duration = Ts*n_pixels_w_pad;
+gen_duration = (Ts*n_pixels_w_pad)/pixel_per_transfer;
 
 img1 = imread(images(1));
 
@@ -28,16 +30,3 @@ input_image = imresize(input_image, input_dimensions);
 %input_image = input_image';
 
 [frm_height, frm_width, frm_depth] = size(input_image);
-
-%% Model Composer Parameters
-
-fs = 100e6;
-Ts = 1/fs;
-
-len_dat = 8;
-len_dat_frac = 0;
-
-line_counter_bits = ceil(log2(frm_width));
-
-data_word_length = int32(len_dat);
-data_word_bin_p = int32(len_dat_frac);
