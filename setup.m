@@ -2,9 +2,17 @@
 % Duncan Likely
 
 
+fs = 100e6;
+Ts = 1/fs;
+
 %% Test Images
 
-filepath = ".\test_imgs\";
+% dir definitions based on host os
+if ispc
+    filepath = ".\test_imgs\";
+elseif isunix
+    filepath = "./test_imgs/";
+end
 
 images = filepath + ["IMG_9415.jpg" "IMG_9416.jpg" "IMG_9417.jpg"];
 
@@ -31,8 +39,6 @@ input_image = imresize(input_image, input_dimensions);
 
 %% Model Composer Parameters
 
-fs = 100e6;
-Ts = 1/fs;
 
 len_dat = 8;
 len_dat_frac = 0;
