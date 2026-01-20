@@ -1,6 +1,13 @@
 %% OBJ DETECTION SETUP SCRIPT
 % Duncan Likely
 
+%% Model Composer Parameters
+
+fs = 100e6;
+Ts = 1/fs;
+
+len_dat = 8;
+len_dat_frac = 0;
 
 %% Test Images
 
@@ -29,15 +36,9 @@ input_image = imresize(input_image, input_dimensions);
 
 [frm_height, frm_width, frm_depth] = size(input_image);
 
-%% Model Composer Parameters
-
-fs = 100e6;
-Ts = 1/fs;
-
-len_dat = 8;
-len_dat_frac = 0;
-
 line_counter_bits = ceil(log2(frm_width));
 
 data_word_length = int32(len_dat);
 data_word_bin_p = int32(len_dat_frac);
+
+[data, SOF, EOL] = img_2_axi4_video_stream(input_image);
