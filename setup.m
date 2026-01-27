@@ -44,15 +44,14 @@ input_image = imresize(input_image, input_dimensions);
 
 [frm_height, frm_width, frm_depth] = size(input_image);
 
-<<<<<<< HEAD
-=======
+
 %% Model Composer Parameters
 
 
 len_dat = 8;
 len_dat_frac = 0;
 
->>>>>>> d64f28305eb877ae4a8f4884e6c000a8f6c1e0e3
+
 line_counter_bits = ceil(log2(frm_width));
 
 data_word_length = int32(len_dat);
