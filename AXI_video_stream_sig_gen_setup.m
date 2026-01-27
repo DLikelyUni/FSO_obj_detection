@@ -1,7 +1,11 @@
 %% Setup file for AXI4-Video-Stream signals generation
 % Duncan Likely
 
-filepath = ".\test_imgs\";
+if ispc 
+	filepath = ".\test_imgs\";
+elseif isunix
+	filepath = "./test_imgs/";
+end
 outfile_number = 0;
 
 output_file = "AXI_video_stream_sig.mat";
