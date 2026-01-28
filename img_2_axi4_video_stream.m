@@ -10,15 +10,18 @@ data = zeros(frm_width*frm_height,1);
 SOF = zeros(frm_width*frm_height,1);
 EOL = zeros(frm_width*frm_height,1);
 
+offset = 0;
+
 for i = 1:frm_height
     if i == 1
         SOF(i) = 1;
     end
 
     for j = 1:frm_width
-        data(i*j) = image(i,j);
+        data(j+offset) = image(i,j);
         if j == frm_width
             EOL(i*j) = 1;
+            offset = offset+320;
         end
 
 

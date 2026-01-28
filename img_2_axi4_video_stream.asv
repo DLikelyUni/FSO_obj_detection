@@ -1,4 +1,5 @@
-
+%% Duncan Likely
+% function converting greyscale image to the AXI4 video stream format
 
 
 function [data, SOF, EOL] = img_2_axi4_video_stream(image)
