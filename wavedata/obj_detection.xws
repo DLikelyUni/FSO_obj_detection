@@ -1,7 +1,7 @@
 {
 	'selections' => [
 		{
-			'name' => '/obj_detection/Video_Processor/buffer_2/Out2'
+			'name' => '/obj_detection/Video_Processor/convolution_kernel/Out1'
 		},
 	],
 }

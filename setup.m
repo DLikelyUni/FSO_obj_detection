@@ -14,6 +14,8 @@ len_dat_frac = 0;
 data_word_length = int32(len_dat);
 data_word_bin_p = int32(len_dat_frac);
 
+delay_cycles = 330;
+
 
 
 %% Test Images
@@ -63,7 +65,6 @@ SOF = timeseries(SOF,time_index');
 EOL = timeseries(EOL,time_index');
 
 
-%% Model Composer Parameters
 
 
 

@@ -1,5 +1,5 @@
 load C:/Xilinx/2025.1/Vivado/lib/win64.o/librdi_dsp_tcltasks.dll
-cd {C:/Users/fsb21125/Documents/FSO_obj_detection/wavedata}
+cd {C:/Users/fsb21125/FSO_obj_detection/wavedata}
 dsp_wave_convert {obj_detection.wfv} 
 set_param project.waveformStandaloneMode 1
 start_gui
