@@ -15,6 +15,7 @@ data_word_length = int32(len_dat);
 data_word_bin_p = int32(len_dat_frac);
 
 
+
 %% Test Images
 
 % dir definitions based on host os
@@ -51,12 +52,13 @@ input_image = imresize(input_image, input_dimensions);
 % convert frame to pixel data arrays
 [data, SOF, EOL] = img_2_axi4_video_stream(input_image);
 
+line_counter_bits = ceil(log2(frm_width));
 
 % data arrays to timeseries format
 frm_duration = Ts*n_pixels;
 time_index = (Ts:Ts:frm_duration);
 
-data = timeseries(data,time_index');
+data = timeseries(uint8(data),time_index');
 SOF = timeseries(SOF,time_index');
 EOL = timeseries(EOL,time_index');
 
@@ -66,12 +68,7 @@ EOL = timeseries(EOL,time_index');
 
 
 
-%line_counter_bits = ceil(log2(frm_width));
 
 
 
-%% Show output
 
-output_img = axi4_video_stream_2_image(out.data_out.Data, out.sof_out.Data, out.eol_out.Data);
-output_img = uint8(output_img);
-imshow(output_img);
