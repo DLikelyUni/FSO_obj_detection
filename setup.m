@@ -65,7 +65,10 @@ SOF = timeseries(SOF,time_index');
 EOL = timeseries(EOL,time_index');
 
 
+%% Gaussian filter
 
+% create coefficients for use in filter subsystems
+kernel = fspecial("gaussian",[3 3], 0.5);
 
 
 

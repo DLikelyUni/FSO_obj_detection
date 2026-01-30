@@ -4,7 +4,7 @@
       <UserUnit time="2000fs"></UserUnit>
    </wave_state>
    <db_ref_list>
-      <db_ref path="C:/Users/fsb21125/FSO_obj_detection/wavedata/obj_detection.wdb" id="1">
+      <db_ref path="C:/Users/fsb21125/Documents/FSO_obj_detection/wavedata/obj_detection.wdb" id="1">
          <top_modules>
             <top_module name="obj_detection" />
          </top_modules>
@@ -12,12 +12,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.0"></ZoomStartTime>
-      <ZoomEndTime time="2,148.5"></ZoomEndTime>
-      <Cursor1Time time="607.0"></Cursor1Time>
+      <ZoomEndTime time="450,996.0"></ZoomEndTime>
+      <Cursor1Time time="0.0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="276"></NameColumnWidth>
-      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+      <ValueColumnWidth column_width="80"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="7" />
    <wvobject fp_name="/obj_detection/Video_Processor/Register1/Out1" type="logic">
