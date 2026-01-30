@@ -14,7 +14,7 @@ len_dat_frac = 0;
 data_word_length = int32(len_dat);
 data_word_bin_p = int32(len_dat_frac);
 
-delay_cycles = 330;
+delay_cycles = 1090;
 
 
 
@@ -32,7 +32,7 @@ images = filepath + ["IMG_9415.jpg" "IMG_9416.jpg" "IMG_9417.jpg"];
 %% Input image conditioning
 
 % frame dimensions for resizing
-input_dimensions = [240 320];
+input_dimensions = [810 1080];
 dimensions_with_pad = input_dimensions + [84 82];
 
 n_pixels = prod(input_dimensions);
@@ -52,7 +52,7 @@ input_image = imresize(input_image, input_dimensions);
 [frm_height, frm_width, frm_depth] = size(input_image);
 
 % convert frame to pixel data arrays
-[data, SOF, EOL] = img_2_axi4_video_stream(input_image);
+[data, SOF, EOL] = img_2_axi4_video_stream(input_image, frm_width);
 
 line_counter_bits = ceil(log2(frm_width));
 
@@ -68,7 +68,7 @@ EOL = timeseries(EOL,time_index');
 %% Gaussian filter
 
 % create coefficients for use in filter subsystems
-kernel = fspecial("gaussian",[3 3], 0.5);
+kernel = fspecial("gaussian",[3 3], 5);
 
 
 

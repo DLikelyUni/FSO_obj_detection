@@ -16,7 +16,7 @@ output_img = uint8(output_img);
 input_img = uint8(input_img);
 
 % Blur using matlab funtion to compare results
-mat_blur = imgaussfilt(input_image);
+mat_blur = imfilter(input_image,kernel);
 
 
 % show reconstructed images for filtered and raw data

@@ -1,7 +1,7 @@
 {
 	'selections' => [
 		{
-			'name' => '/obj_detection/Video_Processor/convolution_kernel/Out1'
+			'name' => '/obj_detection/Subsystem/Clock'
 		},
 	],
 }

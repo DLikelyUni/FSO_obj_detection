@@ -2,7 +2,7 @@
 % function converting greyscale image to the AXI4 video stream format
 
 
-function [data, SOF, EOL] = img_2_axi4_video_stream(image)
+function [data, SOF, EOL] = img_2_axi4_video_stream(image,width)
 
 [frm_height, frm_width, frm_depth] = size(image);
 
@@ -21,7 +21,7 @@ for i = 1:frm_height
         data(j+offset) = image(i,j);
         if j == frm_width
             EOL(i*j) = 1;
-            offset = offset+320;
+            offset = offset+width;
         end
 
 

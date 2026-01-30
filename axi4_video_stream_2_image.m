@@ -10,12 +10,12 @@ function [image, data] = axi4_video_stream_2_image(data_in, SOF, EOL)
     data = zeros(img_end-img_start+1, 1);
     data = data_in(img_start:img_end);
     n_pixels = length(data);
-    EOL(1:n_pixels) = EOL(img_start:img_end);
-    SOF(1:n_pixels) = SOF(img_start:img_end);
+    EOL = EOL(img_start:img_end);
+    SOF = SOF(img_start:img_end);
     
     % calc and init output frame size
     frm_height = sum(EOL);
-    frm_width = 320; % n_pixels/frm_height;
+    frm_width = 1080; % n_pixels/frm_height;
     frm_depth = 1;
     image = zeros(frm_height, frm_width, frm_depth); 
 
@@ -27,8 +27,11 @@ function [image, data] = axi4_video_stream_2_image(data_in, SOF, EOL)
     for j = 1:frm_height
         for i = 1:frm_width
             x = x+1;
-            if x > n_pixels
+            if x > n_pixels % escape if it tries to acess element out of array
                 disp(x)
+                disp(n_pixels)
+                sum(EOL)
+                return
             end
             image(j,i) = (data(x));
             
