@@ -7,6 +7,9 @@
 			'name' => '/obj_detection/Video_Processor/buffer_1/Out2'
 		},
 		{
+			'name' => '/obj_detection/Video_Processor/Mux/Out1'
+		},
+		{
 			'name' => '/obj_detection/Video_Processor/convolution_kernel/Out1'
 		},
 		{
@@ -17,9 +20,6 @@
 		},
 		{
 			'name' => '/obj_detection/Video_Processor/s_axis_video_tdata/Out1'
-		},
-		{
-			'name' => '/obj_detection/Video_Processor/Mux/Out1'
 		},
 	],
 }
