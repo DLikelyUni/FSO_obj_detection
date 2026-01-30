@@ -1,0 +1,142 @@
+/*
+
+AMD Vivado v2025.1 (64-bit) [Major: 2025, Minor: 1]
+SW Build: 6140274 on Thu May 22 00:12:29 MDT 2025
+IP Build: 6138677 on Thu May 22 03:10:11 MDT 2025
+IP Build: 6138677 on Thu May 22 03:10:11 MDT 2025
+
+Process ID (PID): 16896
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Jan 30 13:32:45 GMT 2026
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 11
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 1920x1080
+Local screen bounds: x = 0, y = 0, width = 1920, height = 1032
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: false
+
+Java version: 	21.0.1 64-bit
+
+Java home: 	C:/Xilinx/2025.1/Vivado/tps/win64/jre21.0.1_12
+Java executable: 	C:/Xilinx/2025.1/Vivado/tps/win64/jre21.0.1_12/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:ParallelGCThreads=4, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms812m, -Xmx6144m, -Xss10m]
+Java initial memory (-Xms): 	812 MB
+Java maximum memory (-Xmx):	 6 GB
+
+User name: 	fsb21125
+User home directory: C:/Users/fsb21125
+User working directory: C:/Users/fsb21125/FSO_obj_detection/wavedata
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/2025.1
+HDI_APPROOT: C:/Xilinx/2025.1/Vivado
+RDI_DATADIR: C:/Xilinx/2025.1/Vivado/data
+RDI_BINDIR: C:/Xilinx/2025.1/Vivado/bin
+
+Waveform preferences file: C:/Users/fsb21125/AppData/Roaming/Xilinx/Vivado/2025.1/vivado.xml
+Waveform preferences directory: C:/Users/fsb21125/AppData/Roaming/Xilinx/Vivado/2025.1/
+Waveform layouts directory: C:/Users/fsb21125/AppData/Roaming/Xilinx/Vivado/2025.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/2025.1/Vivado/lib/classes/planAhead.jar
+Waveform log file: 	
+Waveform journal file: 	
+Engine tmp dir: 	C:/Users/fsb21125/FSO_obj_detection/.Xil/Vivado-16896-EEE-R446-35
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+JAVA_HOME: C:\Program Files\Eclipse Adoptium\jdk-8.0.472.8-hotspot\
+MATLAB_JAVA: C:\Program Files\Eclipse Adoptium\jdk-8.0.472.8-hotspot\jre
+RDI_APPROOT: C:/Xilinx/2025.1/Vivado
+RDI_ARGS:  -mode tcl -notrace -nolog -nojou -source C:/Xilinx/2025.1/Model_Composer/scripts/sysgen/tcl/SgWaveformServer.tcl -tclargs librdi_dsp_tcltasks.dll C:/Xilinx/2025.1/Model_Composer/scripts/sysgen/tcl/SgPaSlaveInterp.tcl 12560
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/Xilinx/2025.1
+RDI_BINDIR: C:/Xilinx/2025.1/Vivado/bin
+RDI_BINROOT: C:/Xilinx/2025.1/Vivado/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/Xilinx/2025.1/Vivado/data
+RDI_INSTALLROOT: C:/Xilinx
+RDI_INSTALLVER: Vivado
+RDI_INSTALLVERSION: 2025.1
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/Xilinx/2025.1/Vivado/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/Xilinx/2025.1/Vivado/tps/win64/javafx-sdk-21.0.1
+RDI_JAVAROOT: C:/Xilinx/2025.1/Vivado/tps/win64/jre21.0.1_12
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: C:/Xilinx/2025.1/Vivado/lib/win64.o
+RDI_MINGW_LIB: C:/Xilinx/2025.1/Vivado\tps\mingw\6.2.0\win64.o\nt\bin;C:/Xilinx/2025.1/Vivado\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/Xilinx/2025.1/Vitis/bin;C:/Xilinx/2025.1/Vivado/ids_lite/ISE/bin/nt64;C:/Xilinx/2025.1/Vivado/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/Xilinx/2025.1/Vivado/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0
+RDI_PYTHON3_VERSION: 3.13.0
+RDI_PYTHONHOME: C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0
+RDI_PYTHONPATH: C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0;C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0\bin;C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0\lib;C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/Xilinx/2025.1/Vivado\tps\win64\python-3.13.0\lib
+RDI_SESSION_INFO: C:\Users\fsb21125\FSO_obj_detection:EEE-R446-35-30-01-2026_13-26-51.46
+RDI_SHARED_DATA: C:/Xilinx/SharedData/2025.1/data
+RDI_TPS_ROOT: C:/Xilinx/2025.1/Vivado/tps/win64
+RDI_USE_JDK21: True
+RDI_VERBOSE: False
+XILINX: C:/Xilinx/2025.1/Vivado/ids_lite/ISE
+XILINX_CARDANO: C:/Xilinx/2025.1/Vitis/cardano
+XILINX_DSP: C:/Xilinx/2025.1/Vivado/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/2025.1/Vitis
+XILINX_MODEL_COMPOSER: C:/Xilinx/2025.1/Model_Composer
+XILINX_PLANAHEAD: C:/Xilinx/2025.1/Vivado
+XILINX_SDK: C:/Xilinx/2025.1/Vitis
+XILINX_VITIS: C:/Xilinx/2025.1/Vitis
+XILINX_VIVADO: C:/Xilinx/2025.1/Vivado
+_RDI_BINROOT: C:\Xilinx\2025.1\Vivado\bin
+_RDI_CWD: C:\Users\fsb21125\FSO_obj_detection
+
+
+GUI allocated memory:	812 MB
+GUI max memory:		6,144 MB
+Engine allocated memory: 997 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// Tcl Message: source C:/Xilinx/2025.1/Model_Composer/scripts/sysgen/tcl/SgWaveformServer.tcl -notrace 
+// Tcl Message: current_fileset: Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 539.691 ; gain = 238.863 
+// TclEventType: START_PROGRESS_DIALOG
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: LOAD_FEATURE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 99 MB (+101364kb) [00:00:08]
+// [Engine Memory]: 969 MB (+864086kb) [00:00:08]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'. 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT

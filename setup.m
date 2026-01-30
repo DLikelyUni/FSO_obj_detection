@@ -14,6 +14,8 @@ len_dat_frac = 0;
 data_word_length = int32(len_dat);
 data_word_bin_p = int32(len_dat_frac);
 
+delay_cycles = 330;
+
 
 %% Test Images
 
@@ -51,6 +53,7 @@ input_image = imresize(input_image, input_dimensions);
 % convert frame to pixel data arrays
 [data, SOF, EOL] = img_2_axi4_video_stream(input_image);
 
+line_counter_bits = ceil(log2(frm_width));
 
 % data arrays to timeseries format
 frm_duration = Ts*n_pixels;
@@ -61,17 +64,11 @@ SOF = timeseries(SOF,time_index');
 EOL = timeseries(EOL,time_index');
 
 
-%% Model Composer Parameters
 
 
 
 
-%line_counter_bits = ceil(log2(frm_width));
 
 
 
-%% Show output
 
-output_img = axi4_video_stream_2_image(out.data_out.Data, out.sof_out.Data, out.eol_out.Data);
-output_img = uint8(output_img);
-imshow(output_img);
