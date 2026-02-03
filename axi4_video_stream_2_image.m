@@ -15,7 +15,7 @@ function [image, data] = axi4_video_stream_2_image(data_in, SOF, EOL)
     
     % calc and init output frame size
     frm_height = sum(EOL);
-    frm_width = 1080; % n_pixels/frm_height;
+    frm_width = 320; % n_pixels/frm_height;
     frm_depth = 1;
     image = zeros(frm_height, frm_width, frm_depth); 
 

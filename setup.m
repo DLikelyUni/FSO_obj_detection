@@ -14,7 +14,6 @@ len_dat_frac = 0;
 data_word_length = int32(len_dat);
 data_word_bin_p = int32(len_dat_frac);
 
-delay_cycles = 1090;
 
 
 
@@ -32,7 +31,11 @@ images = filepath + ["IMG_9415.jpg" "IMG_9416.jpg" "IMG_9417.jpg"];
 %% Input image conditioning
 
 % frame dimensions for resizing
-input_dimensions = [810 1080];
+input_dimensions = [240 320];
+
+
+delay_cycles = input_dimensions(2)+10;
+
 dimensions_with_pad = input_dimensions + [84 82];
 
 n_pixels = prod(input_dimensions);
