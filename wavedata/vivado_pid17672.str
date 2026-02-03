@@ -1586,3 +1586,6 @@ selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, /obj_detecti
 // TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
 // TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 1,884 MB. GUI used memory: 53 MB. Current time: 2/3/26, 2:48:06 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,884 MB. GUI used memory: 53 MB. Current time: 2/3/26, 2:48:36 PM GMT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,884 MB. GUI used memory: 53 MB. Current time: 2/3/26, 2:49:06 PM GMT
