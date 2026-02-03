@@ -14,7 +14,7 @@ len_dat_frac = 0;
 data_word_length = int32(len_dat);
 data_word_bin_p = int32(len_dat_frac);
 
-delay_cycles = 1090;
+delay_cycles = 1080+16;
 
 
 
@@ -54,7 +54,7 @@ input_image = imresize(input_image, input_dimensions);
 % convert frame to pixel data arrays
 [data, SOF, EOL] = img_2_axi4_video_stream(input_image, frm_width);
 
-line_counter_bits = ceil(log2(frm_width));
+line_counter_bits = ceil(log2(frm_width))+3;
 
 % data arrays to timeseries format
 frm_duration = Ts*n_pixels;
@@ -68,7 +68,7 @@ EOL = timeseries(EOL,time_index');
 %% Gaussian filter
 
 % create coefficients for use in filter subsystems
-kernel = fspecial("gaussian",[11 11], 0.5);
+kernel = fspecial("gaussian",[11 11], 10);
 
 
 
