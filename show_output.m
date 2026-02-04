@@ -12,7 +12,7 @@ eol_raw_bin = logical(out.eol_out_raw.Data);
 [output_img, output_data] = axi4_video_stream_2_image(out.data_out.Data, sof_bin, eol_bin);
 output_img = uint8(output_img);
 
-[input_img, input_data] = axi4_video_stream_2_image(out.data_out_raw.Data, sof_bin, eol_bin);
+[input_img, input_data] = axi4_video_stream_2_image(out.data_out_raw.Data, sof_raw_bin, eol_raw_bin);
 input_img = uint8(input_img);
 
 % Blur using matlab funtion to compare results

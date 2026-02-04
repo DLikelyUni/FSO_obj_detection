@@ -1,19 +1,82 @@
 {
 	'objects' => [
 		{
+			'name' => '/obj_detection/Video_Processor/px_line_8/Out4'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_4/Out5'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_4/Out4'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_3/Out5'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_1/Register/Out1'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_6/Out4'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_6/Out5'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_5/Out4'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_5/Out5'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_3/Out4'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_2/Out4'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_2/Out5'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_1/Out4'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_7/Out5'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_7/Out4'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_7/buffer_2/Out4'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_8/Out5'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_8/buffer_2/Out4'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_9/Out5'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_9/Out4'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_9/buffer_2/Out4'
+		},
+		{
 			'name' => '/obj_detection/Video_Processor/read_enable/Out1'
 		},
 		{
-			'name' => '/obj_detection/Video_Processor/buffer_1/Out2'
+			'name' => '/obj_detection/Video_Processor/px_line_10/Out2'
 		},
 		{
-			'name' => '/obj_detection/Video_Processor/Subsystem/Out4'
+			'name' => '/obj_detection/Video_Processor/px_line_10/Out4'
+		},
+		{
+			'name' => '/obj_detection/Video_Processor/px_line_11/Out1'
 		},
 		{
 			'name' => '/obj_detection/Subsystem/Clock'
-		},
-		{
-			'name' => '/obj_detection/Video_Processor/Mux/Out1'
 		},
 	],
 }

@@ -1,0 +1,11 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/lib/x86_64-linux-gnu/libc.so.6(+0x45330) [0x7eade2433330]
+/lib/x86_64-linux-gnu/libc.so.6(+0x4798b) [0x7eade243598b]
+/lib/x86_64-linux-gnu/libc.so.6(+0x47bbe) [0x7eade2435bbe]
+/home/duncan/Documents/Xilinx/2025.1/Vivado/lib/lnx64.o/libxv_dsp.so(+0x61e3e) [0x7eade36ffe3e]
+/home/duncan/Documents/Xilinx/2025.1/Vivado/lib/lnx64.o/libboost_thread.so.1.72.0(+0x15629) [0x7eade95bd629]
+/lib/x86_64-linux-gnu/libc.so.6(+0x9caa4) [0x7eade248aaa4]
+/lib/x86_64-linux-gnu/libc.so.6(+0x129c6c) [0x7eade2517c6c]

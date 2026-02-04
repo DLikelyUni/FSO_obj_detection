@@ -1,7 +1,4 @@
 {
 	'selections' => [
-		{
-			'name' => '/obj_detection/Subsystem/Clock'
-		},
 	],
 }
